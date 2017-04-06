@@ -1,0 +1,400 @@
+<!doctype html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>Primera Aplicacion</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/temas-app3.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  <!-- Start WOWSlider.com HEAD section -->
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
+  <!-- End WOWSlider.com HEAD section -->
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script>
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+ </head>
+
+<body onLoad="MM_preloadImages('imagenes/1-2susb.jpg')">
+
+  <div data-role="page" id="Principal" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Contaminación Ambiental</h1>
+    </div>
+    <br>
+    <div>
+     <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+     <li class="ui-fisrt-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Definición</h2>
+         <p>Que es en realidad la contaminacion</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Tipos de Contaminación</h2>
+         <p>Lugares y formas de contaminación</p>
+   	   </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Consecuencias de la Contaminación</h2>
+         <p>Calentamiento global y otros efectos</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Reciclaje</h2>
+         <p>Una contribución al cuidado del ambiente</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Medidas Prevetivas</h2>
+         <p>La regla de las tres "r" y La conciencia</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Contaminación en mi Entorno</h2>
+         <p>Detalles y Propuesta para combatirla</p>
+       </a>
+     </li>
+     </ul>
+    </div>
+    <br>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+     <div>
+       <img src="imagenes/logo.png" width="46" height="46">
+     </div>
+     <div>
+       <h4>Aplicacion Tres</h4>
+       <h4>Horacio Ivan Lopez Alonso</h4>
+     </div>
+    </div>
+   </div>
+   
+    
+    <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>¿Qué es la Contaminación?</h1>
+      </div>
+      <div data-role="content" align="center">
+       <div>
+         <h2>Definición</h2>
+         <p align="left">La contaminación es la introducción de sustancias u otros elementos físicos en un medio que provocan que éste sea inseguro o no apto para su uso. El medio puede ser un ecosistema, un medio físico o un ser vivo.</p>
+         <div data-role="main" class="ui-content">
+          <div data-role="collapsible" data-content-theme="false">
+           <h1>Contaminación a Nivel Mundial</h1>
+            <div>
+               <img src="imagenes/definicion1.jpg" width="75%" height="75%">
+            </div>
+          </div>
+         </div>
+         <p align="left">Se da siempre como una alteración negativa del estado natural del medio, y por lo general, se genera como consecuencia de la actividad humana considerándose una forma de impacto ambiental.</p>
+         <div data-role="main" class="ui-content">
+          <div data-role="collapsible" data-content-theme="false">
+           <h1>Humanidad Eco-Suicida</h1>
+            <div>
+               <img src="imagenes/definicion2.jpg" width="75%" height="75%">
+            </div>
+          </div>
+         </div>
+       </div>
+      </div>
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4>Aplicacion Tres, HILA</h4>
+      </div>
+    </div>
+
+
+
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Tipos de Contaminación</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+      <h2>Contaminación del Agua</h2>
+      <p align="left">Como su nombre lo sugiere, “Contaminación del agua” es el tipo de contaminación que supone la contaminación distintos cuerpos de agua. Varias criaturas acuáticas dependen de estos cuerpos de agua y sus características naturales nutritivos para apoyar su vida.</p>
+      <h2>Contaminación del Aire</h2>
+      <p align="left">La contaminación del aire altera la composición química y natural del aire. La respiración es un proceso importante para la vida de todos los seres vivos. Por lo tanto, si el aire que nos rodea está contaminado con gases venenosos, tendría un efecto fatal en nosotros.</p>
+      <h2>Contaminación del Suelo</h2>
+      <p align="left">Suelo pelado de su fertilidad natural mediante el uso de sustancias químicas artificiales, como los pesticidas, insecticidas, etc maduración agentes que se conoce como “contaminación del suelo”.</p>
+      <h2>Contaminación Térmica</h2>
+      <p align="left">Aumento de la temperatura en el ecosistema debido a la liberación de energía de calor excesivo en el medio ambiente por métodos artificiales o desastres naturales que se llama “La contaminación térmica”.</p>
+      <h2>Contaminación Radiactiva</h2>
+      <p align="left">Contaminación radiactiva se produce cuando “RADIACTIVO” desintegrarse liberando metales peligrosos rayos beta que pueden causar cáncer y otras enfermedades mutativas.</p>
+      <h2>Contaminación Acústica</h2>
+      <p align="left">Hay diferentes cualidades de los sonidos. Los sonidos que no son agradables de oír se llaman “ruidos”. Así que un exceso de ruido en el exterior conduce a la “contaminación acústica”.</p>
+      <h2>Contaminación Lumínica</h2>
+      <p align="left">La iluminación brillante en funciones, grandes ciudades, etc causa “contaminación lumínica”. El exceso de luz en la retina provoca gran incomodidad en los ojos, especialmente en condiciones de poca luz, como durante la noche.</p>
+      <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/contaminacion_acustica.jpg" alt="Contaminacion Acustica" title="Contaminacion Acustica" id="wows1_0"/></li>
+		<li><img src="data1/images/contaminacion_del__agua.jpg" alt="Contaminacion del  Agua" title="Contaminacion del  Agua" id="wows1_1"/></li>
+		<li><img src="data1/images/contaminacion_del_aire.jpg" alt="Contaminacion del Aire" title="Contaminacion del Aire" id="wows1_2"/></li>
+		<li><img src="data1/images/contaminacion_del_suelo.jpg" alt="Contaminacion del Suelo" title="Contaminacion del Suelo" id="wows1_3"/></li>
+		<li><img src="data1/images/contaminacion_luminica.jpg" alt="Contaminacion Luminica" title="Contaminacion Luminica" id="wows1_4"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/contaminacion_radiactiva.jpg" alt="wowslider.com" title="Contaminacion Radiactiva" id="wows1_5"/></a></li>
+		<li><img src="data1/images/contaminacion_termica.jpg" alt="Contaminacion Termica" title="Contaminacion Termica" id="wows1_6"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Contaminacion Acustica"><span><img src="data1/tooltips/contaminacion_acustica.jpg" alt="Contaminacion Acustica"/>1</span></a>
+		<a href="#" title="Contaminacion del  Agua"><span><img src="data1/tooltips/contaminacion_del__agua.jpg" alt="Contaminacion del  Agua"/>2</span></a>
+		<a href="#" title="Contaminacion del Aire"><span><img src="data1/tooltips/contaminacion_del_aire.jpg" alt="Contaminacion del Aire"/>3</span></a>
+		<a href="#" title="Contaminacion del Suelo"><span><img src="data1/tooltips/contaminacion_del_suelo.jpg" alt="Contaminacion del Suelo"/>4</span></a>
+		<a href="#" title="Contaminacion Luminica"><span><img src="data1/tooltips/contaminacion_luminica.jpg" alt="Contaminacion Luminica"/>5</span></a>
+		<a href="#" title="Contaminacion Radiactiva"><span><img src="data1/tooltips/contaminacion_radiactiva.jpg" alt="Contaminacion Radiactiva"/>6</span></a>
+		<a href="#" title="Contaminacion Termica"><span><img src="data1/tooltips/contaminacion_termica.jpg" alt="Contaminacion Termica"/>7</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">http://wowslider.net/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+    </div>
+   </div>
+    <div data-role="footer" data-theme="b" data-position="fixed">
+      <h4>Aplicacion Tres, HILA</h4>
+    </div>
+   </div>
+   
+   
+   
+    <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>Consecuencias de la Contaminación</h1>
+      </div>
+      <div data-role="content" align="center">
+       <div>
+         <h2>Calentamiento Global</h2>
+         <p align="left">Múltiples líneas de pruebas científicas demuestran que el sistema climático se está calentando. Aunque a menudo la prensa popular comunica el incremento de la temperatura atmosférica superficial como medición del calentamiento global, la mayor parte de la energía adicional almacenada en el sistema climático desde 1970 se ha usado en calentar los océanos. El resto ha fundido el hielo y calentado los continentes y la atmósfera. nota 1 Muchos de los cambios observados desde la década de 1950 no tienen precedentes en décadas, aun milenios.</p>
+         
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Calentamiento en zonas Naturales</h1>
+         <div>
+            <img src="imagenes/consecuencias2.jpg" width="50%" height="50%">
+         </div>
+       </div>
+      </div>
+      
+       </div>
+      </div>
+      <br>
+      
+      <div data-role="content" align="center">
+       <div>
+         <h2>Derretimiento de los Polos</h2>
+         <p align="left">La pérdida de glaciares y de los casquetes polares durante este siglo puede ser responsable de hasta un 60% de la subida del nivel del mar, lo que supone entre 10 y 25 centímetros; si llegasen a fundirse completamente, el aumento del nivel del agua sería de un metro.</p>
+         
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Derretimiento de un Glacial</h1>
+         <div>
+            <img src="imagenes/consecuencias1.jpg" width="50%" height="50%">
+         </div>
+       </div>
+      </div>
+      
+       </div>
+      </div>
+      <br>
+      
+      <div data-role="content" align="center">
+       <div>
+         <h2>Cambio Climático</h2>
+         <p align="left">El cambio climático es un cambio en la distribución estadística de los patrones meteorológicos durante un periodo prolongado de tiempo (décadas a millones de años).</p>
+         <p align="left">Está causado por factores como procesos bióticos, variaciones en la radiación solar recibida por la Tierra, tectónica de placas y erupciones volcánicas. También se han identificado ciertas actividades humanas como causas significativas del cambio de clima reciente, a menudo llamado calentamiento global.</p>
+         
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Cambia el Clima por Contaminación</h1>
+         <div>
+            <img src="imagenes/consecuencias3.jpg" width="50%" height="50%">
+         </div>
+       </div>
+      </div>
+      
+       </div>
+      </div>
+      
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4>Aplicacion Tres, HILA</h4>
+      </div>
+    </div>
+    
+    
+    
+    <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>Reciclaje</h1>
+      </div>
+      
+      <div data-role="content" align="center">
+       <div>
+         <p align="left">El reciclaje es un proceso cuyo objetivo es convertir desechos en nuevos productos o en materia para su posterior utilización.</p>
+         <p align="left">El reciclaje es un componente clave en la reducción de desechos contemporáneos y es el tercer componente de las 3R (“Reducir, Reciclar, Reutilizar”).</p>
+         <div data-role="main" class="ui-content">
+          <div data-role="collapsible" data-content-theme="false">
+           <h1>Una de las "3R"</h1>
+            <div>
+               <img src="imagenes/reciclaje1.jpg" width="50%" height="50%">
+            </div>
+          </div>
+         </div>
+         <p align="left">Gracias al reciclaje se previene el desuso de materiales potencialmente útiles, se reduce el consumo de nueva materia prima, además de reducir el uso de energía, la contaminación del aire (a través de la incineración) y del agua (a través de los vertederos), así como también disminuir las emisiones de gases de efecto invernadero en comparación con la producción de plásticos.</p>
+         <p align="left">Los materiales reciclables son muchos, e incluyen todo el papel y cartón, el vidrio, los metales ferrosos y no ferrosos, algunos plásticos, telas y textiles, maderas y componentes electrónicos. En otros casos no es posible llevar a cabo un reciclaje debido a la dificultad técnica o alto coste del proceso, de modo que suele reutilizarse el material o los productos para producir otros materiales y se destinan a otras finalidades, como el aprovechamiento energético.</p>
+         <div data-role="main" class="ui-content">
+          <div data-role="collapsible" data-content-theme="false">
+           <h1>El planeta es nuestro único Hogar</h1>
+            <div>
+               <img src="imagenes/reciclaje2.jpg" width="50%" height="50%">
+            </div>
+          </div>
+         </div>
+         
+       </div>
+      </div>
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4>Aplicacion Tres, HILA</h4>
+      </div>
+    </div>
+    
+    
+    
+    <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>Medidas Preventivas</h1>
+      </div>
+      
+      <div data-role="content" align="center">
+       <div>
+         <p align="left">La contaminación ambiental, provoca el cambio climático, este a su refleja en el derretimiento de glaciares, posteriormente sube el nivel del mar... y después simplemente la humanidad estará un paso más cerca de la extinción. Ésto es una relaidad y para afrontarla debemos tomar medidas preventivas.</p>
+       </div>
+      </div>
+      
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h2>Adoptar el uso de las "3R"</h2>
+        <p align="left">Las tres erres consisten en una práctica para alcanzar una sociedad más sostenible.</p>
+         <div>
+          <h3>Reducir</h3>
+          <p>Acciones para reducir la producción de objetos susceptibles de convertirse en residuos, con medidas de compra racional, uso adecuado de los productos, compra de productos sostenibles.</p>
+          <div align="center">
+             <img src="imagenes/reducir.jpg" width="50%" height="50%">
+          </div>
+         </div>
+        <div>
+          <h3>Reutilizar</h3>
+          <p>Acciones que permiten el volver a usar un determinado producto para darle una segunda vida, con el mismo uso u otro diferente. Medidas encaminadas a la reparación de productos y alargar su vida útil.</p>
+         <div align="center">
+            <img src="imagenes/reutilizar.jpg" width="50%" height="50%">
+         </div>
+       </div>
+       <div>
+          <h3>Reciclar</h3>
+          <p>El conjunto de operaciones de recogida y tratamiento de residuos que permiten reintroducirlos en un ciclo de vida. Se utiliza la separación de residuos en origen para facilitar los canales adecuados.</p>
+         <div align="center">
+            <img src="imagenes/reciclar.jpg" width="50%" height="50%">
+         </div>
+       </div>
+      </div>
+     </div>
+       
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Difundir Conciencia</h1>
+         <div>
+          <p>Una efectiva medida preventiva para no seguir en el curso que nos llevará a la extinción, es hacer conciencia de los daños que le estamos provocando a nuestro hogar. Ésta difusión de cultura es más efectiva con los hijos y los amigos, así que no nos cuesta ningún trabajo superarlo y ser mejores ciudadanos del planeta tierra.</p>
+          <br>
+         </div>
+         <div>
+            <img src="imagenes/dconciencia.jpg" width="50%" height="50%">
+         </div>
+       </div>
+      </div>
+      
+      <div data-role="content" align="center">
+       <h3>En Contra de la Contaminación</h3>
+       <p>En los siguientes links podrás encontrar páginas comprometidas a mejorar la vida contrarrestando la contaminación. La decisión es tuya:
+       <p>- <a href="https://greenpeace.mx/megaciudades/queremos-aire-limpio/?origen=webActuaAhora&gclid=CMr1iLbpj9MCFV61wAodvLAJHA" target="_self">Greenpace México</a></p>
+       <p>- <a href="http://www.biosfera.org/" target="_self">Fundación Biósfera</a></p>
+       <p>- <a href="http://wwf.panda.org/" target="_self">WWF Global</a></p>
+      </div>
+      
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4>Aplicacion Tres, HILA</h4>
+      </div>
+    </div>
+    
+    
+    
+    <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>Contaminación en mi entorno</h1>
+      </div>
+      
+      <div data-role="content" align="center">
+       <div>
+         <p align="left">Con el pasar de los días, semanas y meses, uno se acostumbra a ciertas cosas. El detalle, es que pese a acostumbrarse a algo "malo". No se puede acostumbrar uno a todo lo malo.</p>
+         <p align="left">En mi entorno la contaminación obviamente es tanto en el suelo, como en el aire principalmente, pero la que más me afecta tanto a mi como a mi familia y seguramente también a vecinos cercanos es la contaminación acústica causada tanto por los automóviles como por el talachero, y ahora más encima el escándalo completamente innecesario provocado por otro vecino con su música a todo volumen (Mi tío). Y sin pasar por alto el ruido por construcción de otra casa con un vecino.</p>
+       </div>
+      </div>
+      
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h2>1er Vía de Solución</h2>
+         <div>
+          <p>La primera solución que se ha tomado en cuenta por todos los vecinos y por la familia López, es charlar con los vecinos escandalosos para evitar que sigan emitiendo tanta contaminación auditiva.</p>
+         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('susti1','','imagenes/1-2susb.jpg',1)"><img src="imagenes/1susa.jpg" width="75%" height="75%" id="susti1"></a> </div>
+       </div>
+      </div>
+      
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h2>2da Vía de Solución</h2>
+         <div>
+          <p>En caso de que la necedad de los vecinos sea extrema, se dará aviso a las autoridades .</p>
+         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image36','','imagenes/1-2susb.jpg',1)"><img src="imagenes/2susa.jpg" width="75%" height="75%" id="Image36"></a> </div>
+      </div>
+     </div>
+     </div>
+      
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4>Aplicacion Tres, HILA</h4>
+      </div>
+    </div>
+    
+    
+</body>
+</html>
